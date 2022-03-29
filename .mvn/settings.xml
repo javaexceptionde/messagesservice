@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xmlns="http://maven.apache.org/SETTINGS/1.0.0"
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+    <servers>
+        <server>
+            <id>jbull-repo</id>
+            <username>admin</username>
+            <password>eeXdQk1md8OW3XRLwHEg</password>
+        </server>
+    </servers>
+
+    <profiles>
+        <profile>
+            <id>compiler</id>
+            <properties>
+                <JAVA_HOME>/usr/lib/jvm/java-17-openjdk/</JAVA_HOME>
+            </properties>
+        </profile>
+    </profiles>
+
+    <activeProfiles>
+        <activeProfile>compiler</activeProfile>
+    </activeProfiles>
+
+</settings>
