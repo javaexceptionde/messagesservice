@@ -9,17 +9,39 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>base</artifactId>
+    <artifactId>message-service-base</artifactId>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
     </properties>
 
+    <repositories>
+        <repository>
+            <id>jbull-repo</id>
+            <url>https://repo.jbull.dev/repository/maven-public/</url>
+        </repository>
+    </repositories>
+
     <dependencies>
         <dependency>
             <groupId>dev.jbull</groupId>
             <artifactId>Core</artifactId>
-            <version>1.0.1-SNAPSHOT</version>
+            <version>1.0.2-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.jbull</groupId>
+            <artifactId>message-service-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.jbull</groupId>
+            <artifactId>database-service-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
+        </dependency>
+        <dependency>
+            <groupId>dev.jbull</groupId>
+            <artifactId>messaging-service-api</artifactId>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 

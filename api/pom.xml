@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>api</artifactId>
+    <artifactId>message-service-api</artifactId>
 
     <properties>
         <maven.deploy.skip>false</maven.deploy.skip>
