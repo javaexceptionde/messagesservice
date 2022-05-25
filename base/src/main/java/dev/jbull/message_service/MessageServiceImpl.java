@@ -86,9 +86,9 @@ public class MessageServiceImpl extends Service implements MessageService {
                 messageProvider.insertMessage(value.toString(), value.getDefaultMessage(), value.getLanguage());
             }
         }
-        this.getInstance().getServer().getCommandMap().register("message", new MessageCommand());
         messagingProvider = ((MessagingServiceAPI) Core.getCore().getCoreBridge().getService(MessagingService.class)).getMessageProvider();
         if (Core.getCore().isSpigot()){
+            this.getInstance().getServer().getCommandMap().register("message", new MessageCommand());
             ((MessagingServiceAPI) Core.getCore().getCoreBridge().getService(MessagingService.class)).registerChannelMessageListener(new MessageListener());
         }
     }
